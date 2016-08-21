@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Div com rotação</title>
+	<style>
+		*{margin: 0; padding: 0;}
+		main{width: 1000px; margin: 0 auto; text-align: center;}
+		header{width: 100%; padding: 70px 0; background-color: #ccc; font-size: 3em;}
+		section{width: 100%; font-size: 3em;}
+		section:before{display: block; content: ''; height: 0; 
+		background-color: #fff; border-top: 0 solid green; border-right: 1000px solid #ccc;
+		border-bottom: 100px solid transparent; border-left: 0;}		
+		article{width: 100%; padding: 70px 0;}
+		section:nth-child(odd){background-color: #ccc;}
+		section:nth-child(odd):before{display: block; content: ''; height: 0; 
+		background-color: #ccc; border-top: 0 solid green; border-right: 1000px solid #fff;
+		border-bottom: 100px solid transparent; border-left: 0;}
+		footer{width: 100%; padding: 20px 0; background-color: #ccc; font-size: 3em;}
+	</style>
+</head>
+<body>	
+	<main>
+		<header>
+			Header aqui
+		</header>
+		<section>		
+			<article>
+				Conteúdo da div
+			</article>
+		</section>
+		<section>		
+			<article>
+				Conteúdo da div
+			</article>
+		</section>
+		<section>		
+			<article>
+				Conteúdo da div
+			</article>
+		</section>		
+		<footer>Footer aqui</footer>
+	</main>
+</body>
+</html>
